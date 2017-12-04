@@ -1,0 +1,6 @@
+https://registration-pal-cbednarz.apps.longs.pal.pivotal.io/users/34
+https://registration-pal-cbednarz.apps.longs.pal.pivotal.io/accounts?ownerId=34
+https://registration-pal-cbednarz.apps.longs.pal.pivotal.io/projects?accountId=4
+https://allocations-pal-cbednarz.apps.longs.pal.pivotal.io/allocations?projectId=4
+https://backlog-pal-cbednarz.apps.longs.pal.pivotal.io/stories?projectId=4
+https://timesheets-pal-cbednarz.apps.longs.pal.pivotal.io/time-entries?userId=34
