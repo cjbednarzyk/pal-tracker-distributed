@@ -6,6 +6,7 @@ import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.data.redis.connection.*;
+import org.springframework.data.redis.connection.jedis.JedisConnectionFactory;
 import org.springframework.data.redis.core.RedisConnectionUtils;
 import org.springframework.web.client.RestOperations;
 
@@ -19,8 +20,7 @@ public class ProjectClient {
     private final RestOperations restOperations;
     private final String registrationServerEndpoint;
     private ConcurrentMap<Long,ProjectInfo> cache = new ConcurrentHashMap<Long,ProjectInfo>();
-    private RedisConnectionFactory redisConnectionFactory;
-
+    private RedisConnectionFactory redisConnectionFactory = new JedisConnectionFactory();
 
     public ProjectClient(RestOperations restOperations, String registrationServerEndpoint) {
         this.restOperations= restOperations;
