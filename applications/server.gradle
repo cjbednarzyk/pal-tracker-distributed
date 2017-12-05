@@ -16,6 +16,7 @@ dependencies {
     compile "com.zaxxer:HikariCP:2.3.7"
     compile "mysql:mysql-connector-java:$mysqlVersion"
     compile "ch.qos.logback:logback-classic:1.1.11"
+    compile "io.pivotal.spring.cloud:spring-cloud-services-starter-circuit-breaker"
 
     compile "org.springframework.boot:spring-boot-starter-actuator"
     compile "io.pivotal.spring.cloud:spring-cloud-services-starter-service-registry"
