@@ -12,6 +12,9 @@ public class ProjectInfo {
         this.active = active;
     }
 
+    public boolean isActive() {
+        return active;
+    }
 
     @Override
     public boolean equals(Object o) {
